@@ -1,0 +1,559 @@
+                        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+                        /* reset */
+                        
+                        html,
+                        body,
+                        div,
+                        span,
+                        applet,
+                        object,
+                        iframe,
+                        h1,
+                        h2,
+                        h3,
+                        h4,
+                        h5,
+                        h6,
+                        p,
+                        blockquote,
+                        pre,
+                        a,
+                        abbr,
+                        acronym,
+                        address,
+                        big,
+                        cite,
+                        code,
+                        del,
+                        dfn,
+                        em,
+                        img,
+                        ins,
+                        kbd,
+                        q,
+                        s,
+                        samp,
+                        small,
+                        strike,
+                        strong,
+                        sub,
+                        sup,
+                        tt,
+                        var,
+                        b,
+                        u,
+                        i,
+                        center,
+                        dl,
+                        dt,
+                        dd,
+                        ol,
+                        ul,
+                        li,
+                        fieldset,
+                        form,
+                        label,
+                        legend,
+                        table,
+                        caption,
+                        tbody,
+                        tfoot,
+                        thead,
+                        tr,
+                        th,
+                        td,
+                        article,
+                        aside,
+                        canvas,
+                        details,
+                        embed,
+                        figure,
+                        figcaption,
+                        footer,
+                        header,
+                        hgroup,
+                        menu,
+                        nav,
+                        output,
+                        ruby,
+                        section,
+                        summary,
+                        time,
+                        mark,
+                        audio,
+                        video {
+                            margin: 0;
+                            padding: 0;
+                            border: 0;
+                            font-size: 100%;
+                            font: inherit;
+                            vertical-align: baseline;
+                        }
+                        /* HTML5 display-role reset for older browsers */
+                        
+                        article,
+                        aside,
+                        details,
+                        figcaption,
+                        figure,
+                        footer,
+                        header,
+                        hgroup,
+                        menu,
+                        nav,
+                        section {
+                            display: block;
+                        }
+                        
+                        body {
+                            line-height: 1;
+                        }
+                        
+                        ol,
+                        ul {
+                            list-style: none;
+                        }
+                        
+                        blockquote,
+                        q {
+                            quotes: none;
+                        }
+                        
+                        blockquote:before,
+                        blockquote:after,
+                        q:before,
+                        q:after {
+                            content: '';
+                            content: none;
+                        }
+                        
+                        table {
+                            border-collapse: collapse;
+                            border-spacing: 0;
+                        }
+                        
+                        a {
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                        /* header */
+                        
+                        header {
+                            margin: 0 auto;
+                            background: #5F3383;
+                            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+                            height: 100px;
+                        }
+                        
+                        .logo {
+                            float: left;
+                            background: #FFFFFF;
+                            width: 5%;
+                            height: 100px;
+                        }
+                        
+                        .fa-shopping-bag {
+                            color: #5F3383;
+                            margin: 25% 50%;
+                            transform: translate(-50%, -10%)
+                        }
+                        
+                        .date {
+                            padding: 25px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 10%;
+                            height: 50%;
+                            font-family: PingFangTC-Regular;
+                            color: #FFFFFF;
+                            justify-content: center;
+                            flex-direction: column;
+                        }
+                        
+                        .years {
+                            font-size: 20px;
+                            flex: 1;
+                            align-self: flex-end;
+                        }
+                        
+                        .week {
+                            font-size: 20px;
+                            flex: 1;
+                            align-self: flex-end;
+                        }
+                        
+                        .day {
+                            font-size: 48px;
+                            flex: 2;
+                            align-self: center;
+                        }
+                        
+                        .admin {
+                            display: flex;
+                            align-items: center;
+                            position: absolute;
+                            top: 0;
+                            right: 10px;
+                            transform: translateY(-25px);
+                            padding: 0 10px;
+                        }
+                        
+                        .adminphoto {
+                            border-radius: 100%;
+                        }
+                        
+                        .adminmenu {
+                            color: #fff;
+                            padding: 60px 10px 65px 10px;
+                            cursor: pointer;
+                        }
+                        
+                        .menu-list-g {
+                            display: none;
+                            background: #fff;
+                            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+                            height: 100px;
+                            width: 100px;
+                            position: absolute;
+                            right: 0;
+                            top: 125px;
+                            text-align: center;
+                        }
+                        
+                        .menu-list-g .menu-list a {
+                            color: #5F3383;
+                            width: 100px;
+                            padding: 8px 0;
+                            display: inline-block;
+                        }
+                        
+                        .menu-list-g .menu-list a:hover {
+                            color: #fff;
+                            background: #5F3383;
+                        }
+                        
+                        .adminmenu:hover>.menu-list-g {
+                            display: block;
+                        }
+                        /* sidebar */
+                        
+                        .sidebar {
+                            background: #5F3383;
+                            width: 5%;
+                            height: 130%;
+                            position: absolute;
+                            /* bottom: -500px; */
+                            top: 100px;
+                            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+                        }
+                        
+                        .sidebar-meun {
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            margin-top: 30px;
+                        }
+                        
+                        .icon-btn {
+                            flex: 1;
+                            align-self: center;
+                            padding: 3% 0;
+                            text-align: center;
+                            margin: 20% 0;
+                            width: 90%;
+                        }
+                        
+                        .icon-btn:active,
+                        .icon-btn:focus,
+                        .icon-btn:hover,
+                        .active {
+                            background: #3838385b;
+                            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+                        }
+                        /* .icon-btn:active a,
+                    .icon-btn:focus a,
+                    .icon-btn:hover a,
+                    .active a {
+                        color: #5F3383;
+                    } */
+                        
+                        .fa-tachometer-alt {
+                            margin: 0 auto;
+                        }
+                        
+                        .icon-font {
+                            font-family: PingFangTC-Regular;
+                            font-size: 14px;
+                            padding: 5px 0;
+                        }
+                        /* content */
+                        
+                        .content {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            margin-left: 5%;
+                        }
+                        
+                        .cardbox {
+                            background: #FFFFFF;
+                            box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.08);
+                        }
+                        
+                        h3 {
+                            width: 100%;
+                            margin: 22px 0 10px 3%;
+                            font-family: PingFangTC-Semibold;
+                            font-size: 24px;
+                        }
+                        
+                        .cardbox-m {
+                            width: 30%;
+                            margin: 22px 1% 10px 1%;
+                            text-align: center;
+                        }
+                        
+                        .boxtit {
+                            font-family: PingFangTC-Regular;
+                            font-size: 16px;
+                            margin: 5%;
+                        }
+                        
+                        .value {
+                            font-family: PingFangTC-Semibold;
+                            font-size: 36px;
+                            margin: 5%;
+                        }
+                        
+                        .font {
+                            color: #000;
+                            font-size: 16px;
+                        }
+                        
+                        .purple {
+                            color: #5F3383;
+                        }
+                        
+                        .blue {
+                            color: #336A83;
+                        }
+                        
+                        .yellow {
+                            color: #E9A357;
+                        }
+                        
+                        .tit {
+                            flex: 23;
+                        }
+                        
+                        .select {
+                            flex: 1;
+                            margin: 10px 3% 10px 0;
+                        }
+                        
+                        .ch-date {
+                            flex: 4;
+                            margin: 10px 1%;
+                        }
+                        
+                        .ch-date,
+                        .select {
+                            border: 0;
+                            background: #F4F4F4;
+                            box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+                            border-radius: 8px;
+                            text-align: center;
+                        }
+                        
+                        .cardbox-line-b {
+                            width: 90%;
+                        }
+                        
+                        .cardbox-b {
+                            width: 32%;
+                            margin: 20px 2% 20px 0;
+                        }
+                        
+                        .ordersbox {
+                            padding: 0 4%;
+                            box-sizing: border-box;
+                            margin-top: 30px;
+                        }
+                        
+                        .ordersbox a {
+                            color: #000;
+                            display: block;
+                        }
+                        
+                        .cardbox-list {
+                            padding: 10px 5% 10px 5%;
+                            box-sizing: border-box;
+                        }
+                        
+                        .cardbox-list:active,
+                        .cardbox-list:focus,
+                        .cardbox-list:hover {
+                            padding: 10px 5% 10px 5%;
+                            box-sizing: border-box;
+                            background: #cccccc3d;
+                        }
+                        
+                        .num,
+                        .time,
+                        .amount {
+                            float: left;
+                            margin: 5px 5% 5px 5%;
+                            font-family: PingFangTC-Thin;
+                            font-size: 16px;
+                        }
+                        
+                        .fa-chevron-right {
+                            float: right;
+                            margin: 5px 1% 5px 5%;
+                        }
+                        
+                        .clear {
+                            clear: both;
+                        }
+                        
+                        .cardbox-2x {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            width: 60%;
+                            margin: 1%;
+                        }
+                        
+                        .cardbox-s {
+                            width: 48%;
+                            margin: 22px 1% 10px 1%;
+                            text-align: center;
+                        }
+                        
+                        .cardbox-line-s {
+                            width: 92%;
+                        }
+                        
+                        @media (max-width:768px) {
+                            .logo {
+                                width: 10%;
+                            }
+                            .sidebar {
+                                height: 100px;
+                                width: 50%;
+                                position: absolute;
+                                left: calc(20% + 100px);
+                                top: 0px;
+                                box-shadow: none;
+                            }
+                            .sidebar-meun {
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: row;
+                                padding: 0;
+                            }
+                            .icon-btn {
+                                padding: 1% 0;
+                                margin: 0;
+                            }
+                            .icon-btn:active,
+                            .icon-btn:focus,
+                            .icon-btn:hover,
+                            .active {
+                                background: none;
+                                border-bottom: 5px solid #fff;
+                                box-shadow: none;
+                            }
+                            /* content */
+                            .content {
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: center;
+                                margin-left: 0;
+                            }
+                            .cardbox-b {
+                                width: 45%;
+                                margin: 15px 2% 15px 0;
+                            }
+                            .ordersbox {
+                                padding: 0 0.5%;
+                            }
+                            .cardbox-list {
+                                padding: 10px 0.5%;
+                            }
+                            .cardbox-list:active,
+                            .cardbox-list:focus,
+                            .cardbox-list:hover {
+                                padding: 10px 0.5%;
+                            }
+                            .fa-chevron-right {
+                                margin: 5px 0.5% 5px 0.5%;
+                            }
+                            .cardbox-2x {
+                                width: 48%;
+                                margin-top: 2%;
+                            }
+                        }
+                        
+                        @media (max-width:700px) {
+                            .logo {
+                                width: 50px;
+                            }
+                            .fa-shopping-bag {
+                                margin: 50%;
+                                transform: translate(-50%, -0%)
+                            }
+                            .date {
+                                display: none;
+                            }
+                            .sidebar {
+                                width: 45%;
+                                left: 15%;
+                            }
+                            .icon-btn {
+                                padding: 5px 0;
+                                margin: 0;
+                            }
+                            /* content */
+                            .cardbox-m {
+                                width: 90%;
+                                margin: 10px 1%;
+                                text-align: center;
+                            }
+                            .tit {
+                                flex: 2;
+                            }
+                            .select {
+                                flex: 1;
+                                margin: 10px 3% 10px 0;
+                            }
+                            .ch-date {
+                                flex: 3;
+                                margin: 10px 1%;
+                            }
+                            .cardbox-b {
+                                width: 95%;
+                                margin: 15px 2% 15px 0;
+                            }
+                            .ordersbox {
+                                padding: 0 0.5%;
+                            }
+                            .cardbox-list {
+                                padding: 10px 0.5%;
+                            }
+                            .cardbox-list:active,
+                            .cardbox-list:focus,
+                            .cardbox-list:hover {
+                                padding: 10px 0.5%;
+                            }
+                            .fa-chevron-right {
+                                margin: 5px 0.5% 5px 0.5%;
+                            }
+                            .cardbox-2x {
+                                width: 95%;
+                                margin-top: 2%;
+                            }
+                        }
